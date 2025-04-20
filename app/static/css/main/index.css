@@ -1,3 +1,4 @@
+/* ==================== History section ==================== */
 .history{
     display: flex;
     flex-direction: column;
@@ -9,32 +10,26 @@
     padding: 20px;
     background-color: #192734;
     border-radius: 5px;
-    gap: 20px;
+    gap:15px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
 
 .history-item{
-    flex: 1 0 auto;
-    scroll-snap-align: start;
-    background-color: rgba(20,20,30, 0.8);
-    flex: 0 0 calc(100% / 5);
-    height: auto;
-
+    flex: 1fr;
+    display: flex;
+    height: 10rem;
+    flex-direction: column;
     border-radius: 5px;
     position: relative;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
-.history-img img{
-    border-radius: 8px;
-    height: 10rem;
+.history-item img{
     aspect-ratio: 1.5/1;
     border-radius: 8px;
     object-fit: cover;
-    filter: brightness(0.9);
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.7)
+    height: 100%;
 }
 
 
@@ -42,11 +37,28 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    z-index: 10;
+    filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.5));
 }
 
-.history-info p{
-    margin: 5px;
-    filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 2));
+.history-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;  /* controls how high the fog rises */
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 0%,  /* darkest at the bottom */
+        rgba(0, 0, 0, 0) 100%   /* fades out to transparent upwards */
+    );
+    z-index: 1;
 }
+
+.song-title, .song-artist{
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* ==================== History section ==================== */

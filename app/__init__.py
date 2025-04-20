@@ -1,7 +1,7 @@
 from flask_login import login_required
 from app.models import User
 from app.blueprints import auth_bp, main_bp
-from flask import Flask, jsonify, render_template, url_for
+from flask import Flask, jsonify, redirect, render_template, url_for
 from .extensions import db, login_manager, migrate, csrf
 from flask_wtf.csrf import generate_csrf
 
@@ -35,7 +35,7 @@ def create_app():
     @app.route('/')
     @login_required
     def index():
-        return render_template('home.html')
+        return redirect(url_for('main.index'))
     
     @app.route("/site-map")
     def site_map():
