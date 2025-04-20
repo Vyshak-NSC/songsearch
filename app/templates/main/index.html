@@ -7,10 +7,10 @@
 
 <!-- Main page content -->
 {% block content %}
-    <h1>Welcome to MyMusic</h1>
     <section class="history">
         <h2>History</h2>
         <div class="history-container">
+            <!-- <buttton class="clear-history-btn">Clear History</buttton> -->
             <div class="history-item">
                 <img src="{{ url_for('static', filename='images/placeholder.webp') }}" alt="Song cover" class="history-img">
                 <div class="history-info">
@@ -18,6 +18,33 @@
                     <p class="song-artist">Artist</p>
                 </div>
             </div>
+            
+            <div class="history-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
+                <div class="history-info">
+                    <p class="song-title">Name</p>
+                    <p class="song-artist">Artist</p>
+                </div>
+            </div>
+            
+            
+            <div class="history-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
+                <div class="history-info">
+                    <p class="song-title">Name</p>
+                    <p class="song-artist">Artist</p>
+                </div>
+            </div>
+            
+            
+            <div class="history-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
+                <div class="history-info">
+                    <p class="song-title">Name</p>
+                    <p class="song-artist">Artist</p>
+                </div>
+            </div>
+            
             
             <div class="history-item">
                 <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
@@ -45,10 +72,50 @@
     </section>
 
     <section class="playlist">
-        <h2>Playlist</h2>
-
-        <div class="playlist-item">
+        <h2>Playlists</h2>
+        <div class="playlist-container">
+            <div class="playlist-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Playlist cover" class="playlist-img">
+                <div class="playlist-info">
+                    <p class="playlist-name">Playlist Name</p>
+                </div>
+            </div>
             
+            <div class="playlist-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Playlist cover" class="playlist-img">
+                <div class="playlist-info">
+                    <p class="playlist-name">Playlist Name</p>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Playlist cover" class="playlist-img">
+                <div class="playlist-info">
+                    <p class="playlist-name">Playlist Name</p>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Playlist cover" class="playlist-img">
+                <div class="playlist-info">
+                    <p class="playlist-name">Playlist Name</p>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Playlist cover" class="playlist-img">
+                <div class="playlist-info">
+                    <p class="playlist-name">Playlist Name</p>
+                </div>
+            </div>
+            
+            <div class="playlist-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Playlist cover" class="playlist-img">
+                <div class="playlist-info">
+                    <p class="playlist-name">Playlist Name</p>
+                </div>
+            </div>
+
         </div>
         
     </section>
