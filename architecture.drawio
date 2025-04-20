@@ -1,0 +1,64 @@
+<mxfile host="65bd71144e">
+    <diagram name="Architecture Diagram" id="gPDeQieMUoBq2LZyCr3N">
+        <mxGraphModel dx="832" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Frontend (HTML + JS + Flask)" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="20" width="240" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="     Flask Backend&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="100" width="440" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Auth Route" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="130" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Search Route" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="130" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Playback Route" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="130" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="DB ORM (SQLAlchemy)" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="210" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="youtube_search.py" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="270" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="youtube_audio.py" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="270" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="YouTube (Public API)" style="shape=rectangle;whiteSpace=wrap;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="360" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="endArrow=block;endFill=1;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="endArrow=block;endFill=1;" parent="1" source="4" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="endArrow=block;endFill=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="5" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="400" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" style="endArrow=block;endFill=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="543" y="180" as="sourcePoint"/>
+                        <mxPoint x="530" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" style="endArrow=block;endFill=1;exitX=0.817;exitY=0.968;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.086;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="8" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="330" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" style="endArrow=block;endFill=1;entryX=0.81;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.352;exitY=0.984;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="9" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

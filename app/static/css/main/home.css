@@ -1,0 +1,39 @@
+#history, #playlists{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.item {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    box-shadow: 
+                inset 4px 4px 2px rgba(200,200,200,.7),
+                inset -2px -2px 2px rgba(200,200,200,.9);
+
+}
+
+.v-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+

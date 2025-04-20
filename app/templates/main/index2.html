@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+<!-- CSS Links -->
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/home.css') }}">
+{% endblock %}
+
+<!-- Main page content -->
+{% block content %}
+<!-- <audio controls>
+    <source src="https://rr3---sn-gwpa-jv3d.googlevideo.com/videoplayback?expire=1745122543&ei=jyAEaLniFbL94-EPxIqa0Ao&ip=2409%3A4073%3A4d39%3A194a%3Af896%3A69f5%3A86e3%3A6e03&id=o-APA6WrxZ0ZjwPXLrjevYc4vka_OGHClTwAWsJ3qZMbPp&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1745100943%2C&mh=Sn&mm=31%2C29&mn=sn-gwpa-jv3d%2Csn-gwpa-h55r&ms=au%2Crdu&mv=m&mvi=3&pl=41&rms=au%2Cau&gcr=in&initcwndbps=1120000&bui=AccgBcOGqcPVE7mfHrq7L4qSCymUXV5OHDWyLigJ6V8A1v6CXQqrIuhaUmjFdO23QA6DKVWj0cTPQDv4&vprv=1&svpuc=1&mime=audio%2Fwebm&ns=iPs8muZy_cb4RdLH8y-Hj3MQ&rqh=1&gir=yes&clen=4605080&dur=281.521&lmt=1739616982493507&mt=1745100537&fvip=8&keepalive=yes&lmw=1&c=TVHTML5&sefc=1&txp=4532534&n=Xd1XCyxa0HOk7A&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=ACuhMU0wRAIgLsJTLvsLiv8FLEw8jjRZ-ga_ar4coHlDW_KAG5AMasgCIBTDBFMWvOjSvCco9z9_voqRi8yiAdbizOdN3GisSJNa&sig=AJfQdSswRQIhAKj2GkU7W5iX3_LMnMB_3P5c_c4ZkBsH23qQFPfl2XaWAiA1ON-Gu7JYA3mcNxYGjLIXUTDiKHLvM7toJ-aTcXydhQ%3D%3D" type="audio/mpeg">
+    Play
+</audio> -->
+<div class="history-container">
+    <h1>History</h1>
+    <div id="history" class="v-scroll">
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artistr">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artistr">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artistr">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artistr">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artistr">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artistr">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artistr">Artist</p>
+        </div>
+    </div>
+</div>
+
+<div class="playlist-container">
+    <h1>Playlists</h1>
+    <div id="playlists" class="v-scroll">
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artist">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artist">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artist">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artist">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artist">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artist">Artist</p>
+        </div>
+        <div class="item">
+            <p class="song-title">Name</p>
+            <p class="song-artist">Artist</p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+<!-- Js Links -->
+{% block scripts %}
+<script>
+    document.querySelectorAll('.v-scroll').forEach(panel =>{
+        panel.addEventListener('wheel', function(e){
+            e.preventDefault();
+            panel.scrollLeft += e.deltaY;
+        }, {passive:false});
+    })
+</script>
+{% endblock %}

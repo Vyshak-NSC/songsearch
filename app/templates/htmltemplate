@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+<!-- CSS Links -->
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+<!-- Main page content -->
+{% block content %}
+
+{% endblock %}
+
+<!-- Js Links -->
+{% block scripts %}
+{% endblock %}

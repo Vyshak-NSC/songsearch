@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Home | MyMusic{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+    <section class="history-section">
+        <h2>History</h2>
+        <div class="history-container">
+            <div class="history-item">
+                <img src="{{ url_for('static', filename='images/sample_album.jpg') }}" alt="Song cover">
+                <p class="song-title">Song Title</p>
+                <p class="artist-name">Artist</p>
+            </div>
+            <div class="history-item placeholder">
+                <p class="song-title">Song Title</p>
+                <p class="artist-name">Artist</p>
+            </div>
+            <div class="history-item placeholder">
+                <p class="song-title">Song Title</p>
+                <p class="artist-name">Artist</p>
+            </div>
+            <div class="history-item placeholder">
+                <p class="song-title">Song Title</p>
+                <p class="artist-name">Artist</p>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <section class="playlists-section">
+        <h2>Playlists</h2>
+        <div class="playlist-grid">
+            <div class="playlist-item">
+                <div class="playlist-cover"></div>
+                <p>Playlist Name</p>
+            </div>
+            <div class="playlist-item">
+                <div class="playlist-cover"></div>
+                <p>Playlist Name</p>
+            </div>
+            <div class="playlist-item">
+                <div class="playlist-cover"></div>
+                <p>Playlist Name</p>
+            </div>
+            <div class="playlist-item">
+                <div class="playlist-cover"></div>
+                <p>Playlist Name</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,93 @@
+/*========================= Index Page Sections =========================*/
+.history-section, .playlists-section {
+    color: white;
+    margin: 40px 0;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: rgba(40,40,40,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.history-item {
+    min-width: 150px;
+    text-align: center;
+}
+
+.history-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.song-title {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+}
+
+.artist-name {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.history-item.placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(70,70,70,0.4);
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+.carousel-dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.carousel-dots .dot.active {
+    background-color: white;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.playlist-item {
+    background-color: rgba(40,40,40,0.6);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.playlist-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(100,100,100,0.4);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+}

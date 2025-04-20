@@ -1,0 +1,87 @@
+<mxfile host="65bd71144e">
+    <diagram name="Data Flow Diagram" id="xozkEZZ8V0T_f5w4EkgZ">
+        <mxGraphModel dx="979" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="User" style="shape=ellipse;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="60" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Login Page (/login)" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="60" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Auth Route (Flask)" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="60" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&#xa;Database" style="shape=cylinder;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="60" width="110" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Search Page (/search)" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Search Route" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="youtube_search.py" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="YouTube (Search API)" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#999999;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Play Page (/play)" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="260" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Playback Route" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="260" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="youtube_audio.py" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="260" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="YouTube (Audio Stream)" style="shape=rectangle;rounded=1;whiteSpace=wrap;fillColor=#f5f5f5;strokeColor=#999999;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="260" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="endArrow=block;endFill=1;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="endArrow=block;endFill=1;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="endArrow=block;endFill=1;" parent="1" source="4" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="endArrow=block;endFill=1;exitX=0.815;exitY=0.873;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="2" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="142" y="190"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" style="endArrow=block;endFill=1;" parent="1" source="6" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="endArrow=block;endFill=1;" parent="1" source="7" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="endArrow=block;endFill=1;" parent="1" source="8" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="endArrow=block;endFill=1;" parent="1" source="2" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="110" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" style="endArrow=block;endFill=1;" parent="1" source="10" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="endArrow=block;endFill=1;" parent="1" source="11" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="endArrow=block;endFill=1;" parent="1" source="12" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
