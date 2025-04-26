@@ -50,10 +50,15 @@ nav ul {
 
 /*========================= Page Components =========================*/
 .page-container {
-    margin-top: 100px;
+    margin-top: 90px;
     margin-left: 20px;
     margin-right: 20px;
-    /* background-color: rgba(200,200,200,0.4); */
+    height: calc(100vh - 90px - 50px); /* (navbar + footer height) */
+    overflow-y: auto; /* internal scroll here */
+}
+
+.page-container::-webkit-scrollbar {
+    display: none;
 }
 
 footer {

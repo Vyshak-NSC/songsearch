@@ -10,102 +10,100 @@
 {% block content %}
     <div class="search-container">
         <!------- Search bar ------->
-        <section class="search-header">
-            <div class="search-bar">
-                <i class="fa fa-search search-icon"></i>
-                <input type="text" id="search-input" placeholder="Search...">
-            </div>
-        </section>
+        <div class="search-bar">
+            <i class="fa fa-search search-icon"></i>
+            <input type="text" id="search-input" placeholder="Search...">
+        </div>
 
         <!------- Search Results ------->
-        <section class="search-result">
-            <div class="search-result-container">
-                <!-- Result item -->
-                <div class="result-item">
-                    <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
-                    <div class="result-info">
-                        <h3 class="song-title">Song name</h3>
-                        <p class="artist">Artist</p>
-                        <p class="extra-info">
-                        <span class="album">Album</span>
+        <div class="search-results">
+            <!-- Result item -->
+            <div class="result-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
+                <div class="result-info">
+                    <h3 class="song-title">Song name</h3>
+                    <p class="artist">Artist</p>
+                    <p class="extra-info">
                         <span class="duration">3:00</span>
-                        <span class="likes">80k</span></p>
-                    </div>
-                    <div class="controls">
-                        <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
-                        <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
-                    </div>
-                </div>
-                <!--  -->
-                <div class="result-item">
-                    <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
-                    <div class="result-info">
-                        <h3 class="song-title">Song name</h3>
-                        <p class="artist">Artist</p>
-                        <p class="extra-info">
                         <span class="album">Album</span>
-                        <span class="duration">3:00</span>
-                        <span class="likes">80k</span></p>
-                    </div>
-                    <div class="controls">
-                        <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
-                        <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
-                    </div>
+                        <span class="likes">80k</span>
+                    </p>
                 </div>
-
-                <div class="result-item">
-                    <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
-                    <div class="result-info">
-                        <h3 class="song-title">Song name</h3>
-                        <p class="artist">Artist</p>
-                        <p class="extra-info">
-                        <span class="album">Album</span>
-                        <span class="duration">3:00</span>
-                        <span class="likes">80k</span></p>
-                    </div>
-                    <div class="controls">
-                        <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
-                        <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
-                    </div>
-                </div>
-
-                <div class="result-item">
-                    <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
-                    <div class="result-info">
-                        <h3 class="song-title">Song name</h3>
-                        <p class="artist">Artist</p>
-                        <p class="extra-info">
-                        <span class="album">Album</span>
-                        <span class="duration">3:00</span>
-                        <span class="likes">80k</span></p>
-                    </div>
-                    <div class="controls">
-                        <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
-                        <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
-                    </div>
-                </div>
-
-                <div class="result-item">
-                    <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
-                    <div class="result-info">
-                        <h3 class="song-title">Song name</h3>
-                        <p class="artist">Artist</p>
-
-                        <p class="extra-info">
-                            <span class="album">Album</span>
-                            <span class="duration">3:00</span>
-                            <span class="likes">80k</span>
-                        </p>
-                    </div>
-                    <div class="controls">
-                        <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
-                        <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
-                    </div>
+                <div class="controls">
+                    <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
+                    <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
                 </div>
             </div>
-        </section>
+            <!--  -->
+            <div class="result-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
+                <div class="result-info">
+                    <h3 class="song-title">Song name</h3>
+                    <p class="artist">Artist</p>
+                    <p class="extra-info">
+                        <span class="duration">3:00</span>
+                        <span class="album">Album</span>
+                        <span class="likes">80k</span>
+                    </p>
+                </div>
+                <div class="controls">
+                    <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
+                    <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
+                </div>
+            </div>
 
-        
+            <div class="result-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
+                <div class="result-info">
+                    <h3 class="song-title">Song name</h3>
+                    <p class="artist">Artist</p>
+                    <p class="extra-info">
+                        <span class="duration">3:00</span>
+                        <span class="album">Album</span>
+                        <span class="likes">80k</span>
+                    </p>
+                </div>
+                <div class="controls">
+                    <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
+                    <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
+                </div>
+            </div>
+
+            <div class="result-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
+                <div class="result-info">
+                    <h3 class="song-title">Song name</h3>
+                    <p class="artist">Artist</p>
+                    <p class="extra-info">
+                        <span class="duration">3:00</span>
+                        <span class="album">Album</span>
+                        <span class="likes">80k</span>
+                    </p>
+                </div>
+                <div class="controls">
+                    <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
+                    <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
+                </div>
+            </div>
+
+            <div class="result-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="search result image" />
+                <div class="result-info">
+                    <h3 class="song-title">Song name</h3>
+                    <p class="artist">Artist</p>
+
+                    <p class="extra-info">
+                        <span class="album">Album</span>
+                        <span class="duration">3:00</span>
+                        <span class="likes">80k</span>
+                    </p>
+                </div>
+                <div class="controls">
+                    <button class="play-btn"><i class="fa fa-play play-icon"></i></button>
+                    <!-- <button class="play-btn"><i class="fa fa-pause play-icon"></i></button> -->
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
 
