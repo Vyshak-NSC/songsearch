@@ -61,7 +61,7 @@
 }
 
 .result-item img{
-    height: 100px;
+    height: 150px;
     width: auto;
     aspect-ratio: 1/1;
     border-radius: 6px;
@@ -110,6 +110,10 @@
 @media (min-width:320px) and (max-width: 760px) {
     .result-item {
         flex: 1 1 100%;
+    }
+
+    .result-item img{
+        height: 70px;
     }
 
     .extra-info{

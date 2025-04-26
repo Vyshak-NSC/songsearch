@@ -53,7 +53,7 @@ nav ul {
     margin-top: 90px;
     margin-left: 20px;
     margin-right: 20px;
-    height: calc(100vh - 90px - 50px); /* (navbar + footer height) */
+    height: calc(100vh - 90px - 0px); /* (navbar + footer height) */
     overflow-y: auto; /* internal scroll here */
 }
 
