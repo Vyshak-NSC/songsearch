@@ -1,5 +1,5 @@
 :root{
-    --form-color:#1e272e;
+    --form-color:#25252b;
 }
 
 body{
@@ -9,16 +9,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* Adjusting the search bar to be directly below the navigation bar */
-.search-bar {
-    position: relative; /* Changed from sticky to relative */
-    background-color: #fff;
-    width: 100%;
-    margin-top: 60px; /* Ensures it is below the nav bar */
-    padding: 10px; /* Optional: Add padding for better appearance */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
-}
 /*========================= NAV Components =========================*/
 nav {
     position: fixed;
@@ -92,6 +82,16 @@ footer p {
     max-width: 1200px;
     margin: 100px auto 50px auto;
 } */
+
+.btn{
+    border-radius: 100px;
+    border: none;
+    color: #fff;
+    box-shadow: inset -4px -4px 8px rgba(100,100,250,.7),
+                inset 4px 4px 8px rgba(200,200,200,.9);
+    background-color: #1DA1F2;
+    width: 5rem;
+}
 
 /*========================= Form components =========================*/
 form{

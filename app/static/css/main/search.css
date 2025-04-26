@@ -1,16 +1,112 @@
-/* .search-bar{
-    display: flex;
-    justify-content: center;
+/* ==================== Search Bar ====================*/
+
+.search-bar {
+    position: relative; 
+    background-color: #1f1f1f;
+    width: 100%;
     align-items: center;
-    margin: 20px 0;
-    background-color: #192734;
-    padding: 20px;
-    height: 50px;
-} */
+    margin: 20px auto;
+    display: flex;
+    padding: 10px 0px;  
+    border-radius: 8px;
+}
 
 #search-input{
-    width: 70vw;
-    height: 5vh;
-    border-radius: 5px;
-    padding-left:10px;
+    padding:5px 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    height: 1.2rem;
+}
+
+#search-input:focus{
+    outline: none;
+}
+
+#search-input::placeholder{
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+#search-input:focus::placeholder {
+    color: transparent;
+}
+
+.search-icon{
+    color: #cccccc;
+    margin-left: 20px;
+}
+
+/* ==================== Search Result ====================*/
+
+.search-result-container{
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+
+.result-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    flex: 0 1 calc(50% - 2%);
+    padding: 20px 20px;
+    border-radius: 6px;
+    background-color: #192734;
+    box-sizing: border-box;
+}
+
+.result-item img{
+    height: 100px;
+    width: auto;
+    aspect-ratio: 1/1;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.result-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 5px;
+    flex: 1;
+}
+
+.result-info h3{
+    font-size: 1.5rem;
+}
+
+.song-title, 
+.artist,
+.extra-info{
+    margin: 0;
+    padding: 0;
+}
+
+.extra-info span{
+    font-size: calc(85%);
+}
+
+.play-btn{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.play-icon{
+    font-size: 36px;
+}
+
+/* mobile */
+@media (min-width:480px) and (max-width: 760px) {
+    .result-item {
+        flex: 1 1 100%;
+    }
+
+    .extra-info{
+        display: none;
+    }
 }
