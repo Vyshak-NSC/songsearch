@@ -7,17 +7,11 @@
 
 <!-- Main page content -->
 {% block content %}
+    <h2>Welcome {{ current_user.username }}</h2>
     <section class="history">
         <h2>History</h2>
         <div class="history-container">
             <!-- <buttton class="clear-history-btn">Clear History</buttton> -->
-            <div class="history-item">
-                <img src="{{ url_for('static', filename='images/placeholder.webp') }}" alt="Song cover" class="history-img">
-                <div class="history-info">
-                    <p class="song-title">Name</p>
-                    <p class="song-artist">Artist</p>
-                </div>
-            </div>
             
             <div class="history-item">
                 <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
@@ -45,6 +39,30 @@
                 </div>
             </div>
             
+            
+            <div class="history-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
+                <div class="history-info">
+                    <p class="song-title">Name</p>
+                    <p class="song-artist">Artist</p>
+                </div>
+            </div>
+            
+            <div class="history-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
+                <div class="history-info">
+                    <p class="song-title">Name</p>
+                    <p class="song-artist">Artist</p>
+                </div>
+            </div>
+            
+            <div class="history-item">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
+                <div class="history-info">
+                    <p class="song-title">Name</p>
+                    <p class="song-artist">Artist</p>
+                </div>
+            </div>
             
             <div class="history-item">
                 <img src="{{ url_for('static', filename='images/image.png') }}" alt="Song cover" class="history-img">
@@ -102,6 +120,7 @@
                 </div>
             </div>
             
+            
             <div class="playlist-item">
                 <img src="{{ url_for('static', filename='images/image.png') }}" alt="Playlist cover" class="playlist-img">
                 <div class="playlist-info">
@@ -123,4 +142,13 @@
 
 <!-- Js Links -->
 {% block scripts %}
+<script>
+    // js to handle horizontal scroll on history 
+    const history = document.querySelector('.history-container');
+    history.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        history.scrollLeft += e.deltaY;
+    })
+</script>
+
 {% endblock %}

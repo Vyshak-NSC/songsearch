@@ -14,7 +14,11 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     position: relative;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding-left: 10px;
 }
+
 
 .history-item{
     display: flex;
@@ -22,13 +26,20 @@
     flex-direction: column;
     position: relative;
     margin-top: 15px;
+    scroll-snap-align: start;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.history-item:hover{
-    transform: scale(1.05);
+.history-item.active-first{
+    transform: scale(1.5);
     transition: transform 0.3s ease-in-out;
 }
+
+
+/* .history-item:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+} */
 
 .history-item img{
     border-radius: 8px;

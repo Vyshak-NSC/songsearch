@@ -28,6 +28,13 @@
         </form>
         <div class="form-footer">
             <p>Don't have an account? <a href="#">Register here</a></p>
+            {% with message = get_flashed_messages(category_filter='auth-error-user-not-exists') %}
+                {% if message %}
+                    <div class="alert">
+                        <p>{{ message[0] }}</p>
+                    </div>
+                {% endif %}
+            {% endwith %}
         </div>
     </div>
 
@@ -48,6 +55,13 @@
         </form>
         <div class="form-footer">
             <p>Already have an account? <a href="#">Login here</a></p>
+            {% with message = get_flashed_messages(category_filter='auth-error-user-exists') %}
+                {% if message %}
+                    <div class="alert">
+                        <p>{{ message[0] }}</p>
+                    </div>
+                {% endif %}
+            {% endwith %}
         </div>
     </div>
 </div>
@@ -56,4 +70,9 @@
 
 <!-- Js Links -->
 {% block scripts %}
+    <script>
+        document.querySelector('.alert').addEventListener('animationend', function() {
+        this.style.display = 'none'; // Hide the element
+        });
+    </script>
 {% endblock %}

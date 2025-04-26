@@ -17,14 +17,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav-items">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                            <a class="nav-link" href="{{ url_for('main.index') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/search">Search</a>
+                            <a class="nav-link" href="{{ url_for('main.search') }}">Search</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/playlists">Playlists</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('auth.logout') }}">Logout</a>
                         </li>
@@ -32,8 +33,10 @@
                 </div>
                 
             </nav>
-        </header>
 
+            
+        </header>
+        
         <!-- Main Content -->
         <main class="page-container">
             {% block content %}{% endblock %}
